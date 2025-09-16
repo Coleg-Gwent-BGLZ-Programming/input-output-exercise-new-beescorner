@@ -4,10 +4,10 @@ print("Welcome to the Smoothie Shop!")
 
 # Ask the customer for their name
 
-name = input("What is your name? ")
+name = input("What is your name?")
 # Ask how many smoothies they want (convert to integer)
 
-smoothies = int(input("How many smoothies would you like to buy? "))
+smoothies = int(input("How many smoothies would you like to buy?"))
 
 # Calculate the total cost (each smoothie is £3.50)
 
@@ -16,7 +16,7 @@ total_cost = smoothies * price_per_smoothie
 
 # Ask if they want a reusable cup (£1 extra)
 
-cup = input("Would you like to add a reusable cup for £1 extra? (yes/no) ").strip(). lower()
+cup = input("Would you like to add a reusable cup for £1 extra? (yes/no)").strip(). lower()
 if cup == "yes":
    total_cost +1
    cup_message = "Reusable cup added (£1)."
