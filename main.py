@@ -2,21 +2,30 @@
 
 print("Welcome to the Smoothie Shop!")
 
-# TODO: Ask the user for their name using input()
+# Ask the customer for their name
 
+name = input("What is your name? ")
+# Ask how many smoothies they want (convert to integer)
 
-# TODO: Ask how many smoothies they want to buy
+smoothies = int(input("How many smoothies would you like to buy? "))
 
+# Calculate the total cost (each smoothie is £3.50)
 
-# TODO: Convert the number of smoothies to an integer
+price_per_smoothie = 3.50
+total_cost = smoothies * price_per_smoothie
 
+# Ask if they want a reusable cup (£1 extra)
 
-# TODO: Calculate the total cost (each smoothie costs £3.50)
+cup = input("Would you like to add a reusable cup for £1 extra? (yes/no) ").strip(). lower()
+if cup == "yes":
+   total_cost +1
+   cup_message = "Reusable cup added (£1)."
+else:
+   cup_message = "No reusable cup added."
+  
+# Display the message
 
-
-# TODO: Display a message using a formatted string
-
-
-# OPTIONAL CHALLENGE:
-# Ask if the customer wants a reusable cup for £1.00 extra
-# Add the cost if they say yes
+print(f"\nThank you, {name}!")
+print(f"You ordered {smoothies} smoothie(s).")
+print(cup_message)
+print(f"Your total cost is £{total_cost:.2f}")
